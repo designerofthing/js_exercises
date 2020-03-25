@@ -60,10 +60,81 @@ let number2 = rlSync.question('Please enter the second number\n');
 let sum = parseInt(number1) + parseInt(number2);
 
 console.log(`The numbers ${number1} and ${number2} add to ${sum}`);
-*/
+
 
 let rlSync = require('readline-sync');
 let firstName = rlSync.question('What is your first name?\n');
 let lastName = rlSync.question('What is your last name?\n');
 
 console.log(`Well hello there, ${firstName} ${lastName}!`);
+
+//Functions
+
+function add(left, right){
+return left + right;
+}
+let sum = add(3, 6);
+console.log(sum);
+
+
+
+function say(words='hello'){
+console.log(words + '!');
+}
+say('Howdy');
+say();
+
+ Function declaration
+greetPeople();
+
+function greetPeople() {
+  console.log('Good Morning');
+}
+
+//Function Expression
+let greetPeople = function() {
+    console.log('Good Morning');
+ };
+ 
+ greetPeople();
+
+//Arrow function example
+let greetPeople = () => console.log('Good Morning!');
+greetPeople();
+
+
+function getName(prompt){
+//????let name = prompt(getName);
+return name;
+}
+let firstName = getName('What is your first name?');
+let lastName = getName('What is your last name?');
+console.log(`${firstName} ${lastName}`);
+
+
+//My effort
+let numberOne = prompt('Enter the first number:');
+let numberTwo = prompt('Enter the second number:');
+
+numberOne = Number(numberOne);
+numberTwo = Number(numberTwo);
+
+console.log(`${numberOne} * ${numberTwo} = ${numberOne * numberTwo}`);
+
+
+//the answer
+function multiply(left, right) {
+  return left * right;
+}
+
+function getNumber(prompt) {
+  let readlineSync = require('readline-sync');
+  return parseFloat(readlineSync.question(prompt));
+}
+
+let left = getNumber('Enter the first number: ');
+let right = getNumber('Enter the second number: ');
+console.log(`${left} * ${right} = ${multiply(left, right)}`);
+*/
+
+ 
