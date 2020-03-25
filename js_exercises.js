@@ -30,7 +30,7 @@ Template literal
 > `The value of 5 + 10 is ${Number('5') + 10}`
 'The value of 5 + 10 is 15'
 > 
-*/
+
 
 names =["asta", "butterscotch", "pudding", "neptune", "darwin"];
 
@@ -38,3 +38,16 @@ console.log(names);
 
 let pets = {asta: 'dog', butterscotch: 'cat', pudding: 'cat', neptune: 'fish', darwin: 'lizard'};
 console.log(pets);
+*/
+
+//Variables
+
+let name = "Victor";
+
+console.log(`Good morning, ${name}.`);
+console.log(`Good afternoon, ${name}.`);
+console.log(`Good evening, ${name}.`);
+
+
+
+
