@@ -38,7 +38,7 @@ console.log(names);
 
 let pets = {asta: 'dog', butterscotch: 'cat', pudding: 'cat', neptune: 'fish', darwin: 'lizard'};
 console.log(pets);
-*/
+
 
 //Variables
 
@@ -49,5 +49,21 @@ console.log(`Good afternoon, ${name}.`);
 console.log(`Good evening, ${name}.`);
 
 
+let rlSync = require('readline-sync');
+let name = rlSync.question("What's your name?\n");
+console.log(`Good Morning, ${name}!`);
 
 
+let rlSync = require('readline-sync');
+let number1 = rlSync.question('Please enter the first number\n');
+let number2 = rlSync.question('Please enter the second number\n');
+let sum = parseInt(number1) + parseInt(number2);
+
+console.log(`The numbers ${number1} and ${number2} add to ${sum}`);
+*/
+
+let rlSync = require('readline-sync');
+let firstName = rlSync.question('What is your first name?\n');
+let lastName = rlSync.question('What is your last name?\n');
+
+console.log(`Well hello there, ${firstName} ${lastName}!`);
